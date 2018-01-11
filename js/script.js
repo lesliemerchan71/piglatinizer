@@ -6,8 +6,16 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+ 
+  $("button").click(function(){
+    var message=$("input").val();
+    var translatedMessage = ay(message);
+    $("#result").text(translatedMessage);
+});
 
+function ay(word){
+ return word + "ay";    
+}
 
 
 });
