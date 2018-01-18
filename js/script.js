@@ -9,7 +9,13 @@ $( document ).ready(function() {
  
   $("button").click(function(){
     var message=$("input").val();
-    var translatedMessage = ay(message);
+    var translatedMessage = sentenceToPigLatin(message);
+    $("#result").text(translatedMessage);
+});
+
+$("button").click(function(){
+    var message=$("input").val();
+    var translatedMessage = ayToPigLatin(message);
     $("#result").text(translatedMessage);
 });
 
@@ -17,6 +23,13 @@ function ay(word){
  return word + "ay";    
 }
 
+function sentenceToPigLatin(message){
+  return message.split(" ");
+}
+
+function ayToPigLatin(message){
+  return message.split(" "); 
+}
 
 });
 
