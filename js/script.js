@@ -19,6 +19,12 @@ $("button").click(function(){
     $("#result").text(translatedMessage);
 });
 
+$("button").click(function(){
+    var message=$("input").val();
+    var translatedMessage = PigLatin(message);
+    $("#result").text(translatedMessage);
+});
+
 function ay(word){
  return word + "ay";    
 }
@@ -30,6 +36,8 @@ function sentenceToPigLatin(message){
 function ayToPigLatin(message){
   return message.split(" "); 
 }
+
+function 
 
 });
 
